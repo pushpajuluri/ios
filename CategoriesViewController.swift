@@ -81,7 +81,7 @@ class CategoriesViewController: UIViewController,UITableViewDataSource,UITableVi
         let image2  = UIImage(named: "bags3.jpg")
        let bannerobj = BannerModel()
       bannerobj.bannerimageUrl = ""
-     bannerobj.bannerImageName =  "images1"
+     bannerobj.bannerImageName =  "image1"
     bannerArray.append(bannerobj)
     let bannerobj1 = BannerModel()
     bannerobj1.bannerimageUrl = ""
@@ -130,7 +130,7 @@ class CategoriesViewController: UIViewController,UITableViewDataSource,UITableVi
     func loadbannerView()
     {
     
-       bannerImagesArray = [#imageLiteral(resourceName: "bags"),#imageLiteral(resourceName: "watch3"),#imageLiteral(resourceName: "earring"),#imageLiteral(resourceName: "Sports-I")]
+       //bannerImagesArray = [#imageLiteral(resourceName: "bags"),#imageLiteral(resourceName: "watch3"),#imageLiteral(resourceName: "earring"),#imageLiteral(resourceName: "Sports-I")]
         for i in 0..<self.bannerArray.count
         {
            let banObj = self.bannerArray[i]
@@ -145,9 +145,9 @@ class CategoriesViewController: UIViewController,UITableViewDataSource,UITableVi
             position += self.myScrollView.frame.size.width
             myScrollView.isPagingEnabled = true
             myScrollView.contentSize = CGSize(width: position, height: (self.myScrollView.frame.size.height))
-            imageveiw.animationImages = UIImage(named:banObj.bannerImageName)
-            imageveiw.animationDuration = 7
-            imageveiw.startAnimating()
+            //imageveiw.animationImages = UIImage(named:banObj.bannerImageName)
+            //imageveiw.animationDuration = 7
+           // imageveiw.startAnimating()
         }
         
         
